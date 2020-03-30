@@ -1,0 +1,82 @@
+:root {
+  --brand-color: #D08368;
+  --link-hover-color: #5E00FF;
+}
+
+html {
+  line-height: 1.25;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  background: #fff;
+  color: #222;
+  -webkit-text-size-adjust: 100%;
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+.layout {
+  flex: 0 0 auto;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.layout__picture {
+  display: block;
+  border: none;
+  margin: 0 auto;
+  width: 256px;
+  height: 256px;
+}
+
+.layout__header {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0.67em 0 0.17em;
+}
+
+.layout__description {
+  text-align: center;
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 0 0 2.68rem;
+  padding: 0;
+  color: var(--brand-color);
+}
+
+.info {
+  margin: 1rem 0 2rem;
+}
+
+.info__title {
+  margin: 0 0 0.67em;
+  padding: 0;
+  font-size: 1.25rem;
+}
+
+.info__text {
+  margin: 0 0 0.25em;
+  padding: 0;
+}
+
+.info__link {
+  background: none;
+  color: var(--brand-color);
+  transition: 0.2s;
+}
+
+.info__link:hover,
+.info__link:focus {
+  color: var(--link-hover-color);
+}
+
+.info__link:active {
+  opacity: 0.7;
+}
